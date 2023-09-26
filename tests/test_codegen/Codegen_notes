@@ -1,0 +1,8 @@
+1. Open terminal
+2. Run command: 'npx playwright codegen'
+3. Browser and playwright inspector will pop-up
+
+To see all commands 
+npx playwright codegen --help
+
+npx playwright codegen --device='iPhone 14 Pro Max'

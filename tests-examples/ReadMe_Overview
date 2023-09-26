@@ -19,17 +19,13 @@ Option 2.
 Playwright main commands
 
 npx playwright --help (to get all npx options)
-
 npx playwright test (Runs the end-to-end tests)
-
 npx playwright test show-report (Open browser and shows the test report)
 npx playwright test --workers 3 (runs with 3 workers in parallel)
-
 npx playwright test one.spec.js (run specific file)
 npx playwright test one.spec.js two.spec.js (runs files specified)
 npx playwright test one two (runs files that contains one or two in file name)
 npx playwright test -g "check title" (runs file that has matching title)
-
 npx playwright test --project=chromium (runs on specific browser)
 npx playwright test --headed (runs on headed mode)
 npx playwright test --debug (runs on debug mode)
@@ -37,4 +33,5 @@ npx playwright test --debug (runs on debug mode)
 options can also be combined:
 npx playwright test example.spec.js --debug
 npx playwright test example.spec.js:21 --debug
+
 
