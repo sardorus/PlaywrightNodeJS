@@ -1,0 +1,22 @@
+Trace Viewer is GUI tool that helps viewing the executed test along with snapshots, timeline and other traces
+
+1. go to playwright.config.js file and make changes
+
+# //retries: process.env.CI ? 2 : 0,
+  retries: 1,
+
+# /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+  trace: 'on-first-retry',
+
+2. npx playwright show-trace test-results/test_traceviewer-traceViewer-tracetestviewer-chromium-retry1/trace.zip
+
+# Trace Viewer Options
+'on-first-retry' - record a trace only when retrying a test for the first time
+'off' - do not record a trace
+'on' - record a trace for each test (not recommended as its performance heavy)
+'retain-on-failure' - record a trace for each test but remove it from successful test runs
+
+# To set trace on from command 
+npx playwright test --trace on
+
+
